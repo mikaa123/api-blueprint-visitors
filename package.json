@@ -1,0 +1,31 @@
+{
+  "name": "api-blueprint-visitors",
+  "version": "0.1.2",
+  "description": "A Visitor base class that lets you derive your own visitors for manipulating API-Blueprint's AST, so that you can build awesome tools.",
+  "main": "lib/index.js",
+  "author": "Michael Sokol <misokol123@gmail.com>",
+  "keywords": [
+    "protagonist",
+    "api",
+    "blueprint",
+    "apiblueprint",
+    "visitor"
+  ],
+  "scripts": {
+    "watch": "babel src --out-dir lib --watch",
+    "prepublish": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaa123/api-blueprint-visitors.git"
+  },
+  "author": "Michael Sokol <misokol123@gmail.com> (http://sokolmichael.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikaa123/api-blueprint-visitors/issues"
+  },
+  "homepage": "https://github.com/mikaa123/api-blueprint-visitors#readme",
+  "devDependencies": {
+    "babel": "^5.8.3"
+  }
+}
