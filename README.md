@@ -9,7 +9,7 @@ A **[Visitor](https://en.wikipedia.org/wiki/Visitor_pattern)** base class that l
 Two things are provided in api-blueprint-visitors:
 
 * A **Visitor** base class
-* The `makeASTVisitable` function, that makes Protagonist's AST visitable.
+* The `makeASTVisitable` function, that makes [Drafter](https://github.com/apiaryio/drafter.js)'s AST visitable.
 
 Let's imagine we want to create a script that counts all the Resources, Requests
 and Responses in a blueprint file.
@@ -51,7 +51,7 @@ Now, in order to visit the AST, we need to make that AST visitable:
 
 ```js
 fs.readFile('blueprint.md', 'utf8', function (err, data) {
-    protagonist.parse(data, function(error, result) {
+    drafter.make(data, function(error, result) {
       let ast = result.ast,
         myVisitor = new CounterVisitor();
 
